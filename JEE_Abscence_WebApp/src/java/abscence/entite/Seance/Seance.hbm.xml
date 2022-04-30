@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 26 avr. 2019 22:09:07 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+  <class catalog="gestion_abscence" name="abscence.entite.Seance.Seance" optimistic-lock="version" table="seance">
+    <id name="idSeance" type="int">
+      <column name="idSeance"/>
+      <generator class="assigned"/>
+    </id>
+    <property name="titre" type="string">
+      <column length="20" name="titre" not-null="true"/>
+    </property>
+    <property name="dateDebut" type="timestamp">
+      <column  name="dateDebut" not-null="true"/>
+    </property>
+      <property name="dateFin" type="timestamp">
+      <column  name="dateFin" not-null="true"/>
+    </property>
+    <property name="identifiantFormation" type="int">
+      <column name="identifiantFormation" not-null="true"/>
+    </property>
+  </class>
+</hibernate-mapping>

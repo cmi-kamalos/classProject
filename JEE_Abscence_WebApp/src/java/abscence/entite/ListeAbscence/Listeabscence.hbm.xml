@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+  <class catalog="gestion_abscence" name="abscence.entite.ListeAbscence.Listeabscence" optimistic-lock="version" table="listeabscence">
+    <id name="idListeAbscence" type="int">
+      <column name="idListeAbscence"/>
+      <generator class="assigned"/>
+    </id>
+    <property name="nbreAbscence" type="int">
+      <column name="nbreAbscence" not-null="true"/>
+    </property>
+    <property name="identifiantFormation" type="int">
+      <column name="identifiantFormation" not-null="true"/>
+    </property>
+    <property name="identifiantApprenant" type="int">
+      <column name="identifiantApprenant" not-null="true"/>
+    </property>
+  </class>
+</hibernate-mapping>

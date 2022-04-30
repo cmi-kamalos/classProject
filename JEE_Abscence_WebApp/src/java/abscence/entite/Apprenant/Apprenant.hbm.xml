@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 26 avr. 2019 22:09:07 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+  <class catalog="gestion_abscence" name="abscence.entite.Apprenant.Apprenant" optimistic-lock="version" table="apprenant">
+    <id name="idApprenant" type="int">
+      <column name="idApprenant"/>
+      <generator class="assigned"/>
+    </id>
+    <property name="nom" type="string">
+      <column length="20" name="nom" not-null="true"/>
+    </property>
+    <property name="prenom" type="string">
+      <column length="20" name="prenom" not-null="true"/>
+    </property>
+  </class>
+</hibernate-mapping>

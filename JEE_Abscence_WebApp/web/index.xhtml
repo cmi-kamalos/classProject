@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Facelet Title</title>
+        <h:outputStylesheet library="css" name="login.css" />
+
+    </h:head>
+    <h:body>
+        <header>
+            <div class="intro">
+                <p> Bienvenue dans le site de centre de Formation</p>
+            </div>
+            <div class="logo">
+                <img src="resources/img/img.jpg" width="280" height="80"/>
+            </div>
+        </header>
+        <div class="page">
+            <div class="log">
+
+
+
+                <h:form styleClass="Fogbhn" class="form1" >
+                    <div class="log2"> Authentification
+                        <img src="resources/img/user.png" width="40" height="25"/>
+                    </div>
+
+                    <p><span style="color:white"><h:outputLabel class="label" value="Identifiant: &nbsp; &nbsp;&nbsp;" for="username"/></span>
+                        <h:inputText id="username" value="#{admin.manager.login}" requiredMessage="Veuillez d'abord entrez votre Identifiant" title="Votre Identifiant" required="true"/><br></br>
+                        <h:message for="username" class="error"   /></p>
+                    <p><span style="color:white"> <h:outputLabel value="Mot de passe:"   for="password"/></span>
+                        <h:inputSecret id="password" value="#{admin.manager.password}" requiredMessage="Veuillez d'abord entrez votre mote de Passe" title="Votre mot de passe"  required="true"/><br></br>
+                        <h:message for="password" class="error"  />
+                    </p>
+                    <h:commandButton  action="#{admin.redirect()}" type="submit" value="Connecter"  class="btn"></h:commandButton>
+                </h:form>
+            </div>
+            <div class="subs">
+                <div class="propo">
+                    <p>
+                        Si vous vous rencontrez de problemes pour se connecter, veuillez renseigner ces champs
+                        et soumettre à l'administrateur
+                    </p>
+                </div>
+                <h:form class="form2">
+
+                    <p>
+                        <span style="color:white">   <h:outputLabel value="Nom" for="name"/></span>
+                        <input type="text" id="name" placeholder="votre nom" />
+                    </p>
+                    <p>
+                        <span style="color:white"> <h:outputLabel value="Email" for="email"/></span>
+                        <input type="Email" id="email" placeholder="votre courrier Electronique" />
+                    </p>
+                    <p>
+                        <span style="color:white"><h:outputLabel value="Message" for="msg"/></span>
+                        <textarea rows="5" cols="40" id="msg" placeholder="Entrer votre message ici!"></textarea>
+                    </p>
+
+                    <input type="submit" class="btn" value="Envoyer"/>
+                </h:form>
+            </div>
+        </div>
+
+
+    </h:body>
+</html>
+

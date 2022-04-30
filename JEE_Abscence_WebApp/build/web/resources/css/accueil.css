@@ -1,0 +1,44 @@
+body {
+  margin: 0; padding:0;
+ width:100%;
+background:#f5f5f5;
+}
+.entete{
+  background: #f5f5f5;
+   height:50px;
+   
+}
+#header{
+background:white;
+ height: 20px;
+}
+.menu{
+   margin-left:40px;
+    height: 20px;
+    float: left;
+}
+.menu .navmenu{
+    padding: 20px;
+    text-decoration: none;
+    color:black;
+}
+.menu .navmenu:hover{
+    color:#f68b1e;
+}
+.deconnect{
+    float: right;
+    height: 20px;
+    padding-right: 20px;
+}
+.bottom {
+    /*background:#f68b1e;*/
+    color:black;
+    border:none;
+    cursor: pointer;
+     background: none;
+
+}
+.bottom:hover{
+    color:white;
+    background:#f68b1e;
+}

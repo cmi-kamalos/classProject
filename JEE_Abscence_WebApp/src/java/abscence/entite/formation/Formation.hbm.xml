@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+  <class name="abscence.entite.formation.Formation" table="formation"/>
+  <id name="idformation" type="int">
+    <column name="idFormation"/>
+    <generator class="assigned" />
+</id>
+<property name="nom" type="string">
+    <column name="nom" length="50"/>
+</property>
+<property name="identifiantFormateur" type="int">
+    <column name="identifiantFormateur"/>
+</property>
+</hibernate-mapping>
